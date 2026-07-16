@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+  <html lang="th">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MeowMeow7 — ของดีบอกต่อ 🐾</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --cream:#FFF7EE;
+      --paper:#FFFFFF;
+      --plum:#3A2B39;
+    --plum-soft:#6B5768;
+    --coral:#FF6F81;
+          --coral-deep:#E85570;
+          --sage:#8FAE85;
+    --butter:#FFD873;
+          --line:#EADFD0;
+          --shadow: 0 10px 30px rgba(58,43,57,0.08);
+}
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+        background:var(--cream);
+    color:var(--plum);
+    font-family:'Sarabun',sans-serif;
+    overflow-x:hidden;
+    background-image:
+      radial-gradient(circle at 12% 8%, rgba(255,111,129,0.07) 0, transparent 40%),
+            radial-gradient(circle at 88% 18%, rgba(143,174,133,0.08) 0, transparent 42%);
+}
+  h1,h2,h3,.display{font-family:'Mitr',sans-serif;}
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .paw{position:absolute; font-size:22px; opacity:.18; transform:rotate(var(--r,0deg)); pointer-events:none; user-select:none;}
+  header{
+        position:sticky; top:0; z-index:50;
+    background:rgba(255,247,238,0.85);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+}
+  .nav{
+        max-width:1120px; margin:0 auto; padding:14px 24px;
+    display:flex; align-items:center; justify-content:space-between;
+}
+  .brand{display:flex; align-items:center; gap:10px;}
+  .brand-mark{width:40px; height:40px;}
+  .brand-name{font-size:22px; font-weight:600; letter-spacing:.3px;}
+  .brand-name span{color:var(--coral);}
+  .nav-links{display:flex; gap:10px; align-items:center;}
+  .nav-links a{
+        display:flex; align-items:center; gap:6px;
+    font-size:14px; font-weight:500; color:var(--plum-soft);
+    padding:8px 14px; border-radius:999px; border:1.5px solid var(--line);
+    transition:.2s;
+}
+  .nav-links a:hover{border-color:var(--coral); color:var(--coral-deep); background:#fff;}
+    .hero{
+          max-width:1120px; margin:0 auto; padding:64px 24px 40px;
+    display:grid; grid-template-columns:1.1fr .9fr; gap:40px; align-items:center;
+    position:relative;
+}
+  .eyebrow{
+        display:inline-flex; align-items:center; gap:8px;
+    background:var(--butter); color:#5A4300; font-weight:600; font-size:13px;
+    padding:6px 14px; border-radius:999px; transform:rotate(-2deg);
+    box-shadow:var(--shadow);
+}
+  .hero h1{
+        font-size:clamp(34px,5vw,54px); line-height:1.15; margin:18px 0 16px; font-weight:600;
+  }
+  .hero h1 em{font-style:normal; color:var(--coral); position:relative;}
+  .hero p{font-size:17px; color:var(--plum-soft); max-width:46ch; line-height:1.7;}
+  .hero-ctas{display:flex; gap:12px; margin-top:28px; flex-wrap:wrap;}
+  .btn{
+        display:inline-flex; align-items:center; gap:8px;
+    font-family:'Mitr',sans-serif; font-weight:500; font-size:15px;
+    padding:13px 26px; border-radius:999px; cursor:pointer; border:none;
+    transition:.2s transform, .2s box-shadow;
+}
+  .btn-primary{background:var(--coral); color:#fff; box-shadow:0 8px 20px rgba(255,111,129,.35);}
+    .btn-primary:hover{transform:translateY(-2px); box-shadow:0 12px 26px rgba(255,111,129,.45);}
+  .btn-ghost{background:#fff; color:var(--plum); border:1.5px solid var(--line);}
+      .btn-ghost:hover{border-color:var(--plum);}
+  .hero-art{position:relative; display:flex; justify-content:center;}
+  .cat-card{
+        width:280px; background:var(--paper); border-radius:22px; padding:26px 22px 22px;
+    box-shadow:var(--shadow); transform:rotate(3deg);
+    border:1px solid var(--line);
+}
+  .cat-card .tape{
+    position:absolute; top:-14px; left:50%; transform:translateX(-50%) rotate(-4deg);
+    width:90px; height:26px; background:rgba(255,216,115,.85); border:1px solid rgba(0,0,0,.03);
+  }
+  .cat-caption{text-align:center; margin-top:14px; font-family:'Mitr',sans-serif; font-size:14px; color:var(--plum-soft);}
+  section{max-width:1120px; margin:0 auto; padding:70px 24px;}
+  .section-head{text-align:center; margin-bottom:44px;}
+  .section-head .kicker{
+    font-size:13px; font-weight:600; letter-spacing:1.5px; text-transform:uppercase;
+    color:var(--sage);
+  }
+  .section-head h2{font-size:clamp(26px,3.4vw,36px); margin-top:8px;}
+  .section-head p{color:var(--plum-soft); margin-top:10px;}
+  .grid{
+        display:grid; grid-template-columns:repeat(auto-fill, minmax(230px,1fr)); gap:34px 28px;
+                                                                                }
+  .card{
+        background:var(--paper); border-radius:14px; padding:14px 14px 18px;
+    box-shadow:var(--shadow); border:1px solid var(--line);
+    position:relative; transition:.25s transform;
+  }
+  .card:nth-child(odd){transform:rotate(-1.6deg);}
+  .card:nth-child(even){transform:rotate(1.4deg);}
+  .card:hover{transform:rotate(0deg) translateY(-6px); z-index:2;}
+  .card .washi{
+    position:absolute; top:-10px; left:20px; width:56px; height:20px;
+    background:rgba(143,174,133,.55); transform:rotate(-6deg);
+  }
+  .card .thumb{
+    aspect-ratio:1/1; border-radius:8px; overflow:hidden; margin-bottom:12px;
+    display:flex; align-items:center; justify-content:center; font-size:34px;
+    background:linear-gradient(135deg,var(--g1,#FFD9E1),var(--g2,#FFF1D6));
+      }
+  .card h3{font-size:15.5px; font-weight:500; line-height:1.4; min-height:44px; font-family:'Sarabun',sans-serif;}
+  .card .price{
+    font-family:'Mitr',sans-serif; font-weight:600; color:var(--coral-deep); margin:8px 0 12px; font-size:16px;
+  }
+  .card .shop-btn{
+        display:flex; align-items:center; justify-content:center; gap:6px;
+    width:100%; padding:10px; border-radius:999px; background:var(--plum); color:#fff;
+        font-family:'Mitr',sans-serif; font-size:13.5px; font-weight:500;
+}
+  .card .shop-btn:hover{background:var(--coral-deep);}
+  .tag{
+        position:absolute; top:10px; right:10px; background:var(--butter); color:#5A4300;
+    font-size:11px; font-weight:600; padding:3px 9px; border-radius:999px;
+  }
+  .video-strip{
+        display:flex; gap:18px; overflow-x:auto; padding-bottom:12px; scroll-snap-type:x mandatory;
+}
+  .video-strip::-webkit-scrollbar{height:6px;}
+      .video-strip::-webkit-scrollbar-thumb{background:var(--line); border-radius:99px;}
+  .vcard{
+        scroll-snap-align:start; flex:0 0 170px; aspect-ratio:9/16; border-radius:16px;
+    background:linear-gradient(160deg,#3A2B39,#5c4458);
+    display:flex; align-items:flex-end; padding:14px; position:relative; overflow:hidden;
+    box-shadow:var(--shadow);
+}
+  .vcard::before{
+        content:"▶"; position:absolute; top:44%; left:50%; transform:translate(-50%,-50%);
+    width:44px; height:44px; background:rgba(255,255,255,.18); border-radius:50%;
+    display:flex; align-items:center; justify-content:center; color:#fff; font-size:15px;
+    }
+  .vcard span{color:#fff; font-size:12.5px; font-weight:500; position:relative; z-index:1;}
+    footer{
+          background:var(--plum); color:#F3E9EE; margin-top:40px;
+  }
+  .footer-inner{
+        max-width:1120px; margin:0 auto; padding:52px 24px 30px;
+    display:grid; grid-template-columns:1.3fr 1fr 1fr; gap:32px;
+}
+  footer h4{font-family:'Mitr',sans-serif; font-weight:500; margin-bottom:14px; font-size:15px;}
+  footer p{color:#cbb9c5; font-size:14px; line-height:1.8;}
+    .foot-links a{
+        display:block; color:#cbb9c5; font-size:14px; padding:5px 0; transition:.2s;
+  }
+  .foot-links a:hover{color:#fff;}
+      .foot-bottom{
+        border-top:1px solid rgba(255,255,255,.1); text-align:center; padding:18px;
+    font-size:12.5px; color:#a993a2;
+    }
+  @media(max-width:860px){
+    .hero{grid-template-columns:1fr; padding-top:40px;}
+    .hero-art{order:-1;}
+          .footer-inner{grid-template-columns:1fr; text-align:center;}
+}
+</style>
+  </head>
+  <body>
+  <span class="paw" style="top:120px; left:6%; --r:-10deg;">🐾</span>
+  <span class="paw" style="top:340px; right:5%; --r:14deg;">🐾</span>
+  <span class="paw" style="top:900px; left:4%; --r:8deg;">🐾</span>
+  <header>
+    <div class="nav">
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="30" fill="#FF6F81" opacity="0.12"/>
+          <path d="M20 22 L16 10 L28 18 Z" fill="#3A2B39"/>
+          <path d="M44 22 L48 10 L36 18 Z" fill="#3A2B39"/>
+          <circle cx="32" cy="30" r="16" fill="#FFF7EE" stroke="#3A2B39" stroke-width="2"/>
+          <circle cx="26" cy="28" r="1.6" fill="#3A2B39"/>
+          <circle cx="38" cy="28" r="1.6" fill="#3A2B39"/>
+          <path d="M29 34 Q32 37 35 34" stroke="#3A2B39" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+        </svg>
+        <div class="brand-name">Meow<span>Meow7</span></div>
+      </div>
+      <nav class="nav-links">
+        <a href="https://www.tiktok.com/@meowmeovvw" target="_blank" rel="noopener">🎵 TikTok</a>
+        <a href="https://www.facebook.com/meowmeow677" target="_blank" rel="noopener">📘 Facebook</a>
+        <a href="#products" class="btn-ghost" style="border-radius:999px;">ดูสินค้าทั้งหมด</a>
+      </nav>
+    </div>
+  </header>
+  <div class="hero">
+    <div>
+      <span class="eyebrow">🐾 ของดีบอกต่อ ทุกวัน</span>
+      <h1>รีวิวจริง ใช้จริง <br><em>ของมันต้องมี</em> ฉบับแมวเหมียว</h1>
+      <p>รวมของใช้ในบ้าน แฟชั่น และของสำหรับน้องแมว ที่ MeowMeow คัดมาให้แล้วว่าดีจริง คุ้มจริง กดช้อปได้จากลิงก์ในแต่ละคลิปเลย</p>
+      <div class="hero-ctas">
+        <a href="#products" class="btn btn-primary">🛍️ ช้อปของแนะนำ</a>
+        <a href="https://www.tiktok.com/@meowmeovvw" target="_blank" rel="noopener" class="btn btn-ghost">▶ ดูคลิปรีวิว</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="cat-card">
+        <div class="tape"></div>
+        <div style="aspect-ratio:1/1;border-radius:14px;background:linear-gradient(150deg,#FFD9E1,#FFEFC8);display:flex;align-items:center;justify-content:center;font-size:56px;">🐈</div>
+        <div class="cat-caption">"อันนี้ตัวจริงบอกเลยว่าคุ้ม" — MeowMeow</div>
+      </div>
+    </div>
+  </div>
+  <section id="products">
+    <div class="section-head">
+      <div class="kicker">Shop the finds</div>
+    <h2>ของแนะนำประจำสัปดาห์นี้</h2>
+      <p>คัดจากคลิปที่คนถามซ้ำเข้ามาบ่อยที่สุด — กดปุ่มด้านล่างเพื่อไปหน้าสินค้าบน Shopee</p>
+    </div>
+    <div class="grid">
+      <div class="card" style="--g1:#FFD9E1;--g2:#FFE9C8;">
+        <div class="washi"></div>
+        <span class="tag">ขายดี</span>
+        <div class="thumb">👕</div>
+        <h3>เสื้อแขนสั้น ทรงสลิมฟิต สีสดใส มีให้เลือกหลายสี</h3>
+        <div class="price">ดูราคาหน้าสินค้า</div>
+        <a class="shop-btn" href="https://s.shopee.co.th/4AyO4dX3sl" target="_blank" rel="noopener">ช้อปเลย →</a>
+      </div>
+      <div class="card" style="--g1:#D9E8FF;--g2:#F0F5FF;">
+        <div class="washi"></div>
+        <span class="tag">มาใหม่</span>
+        <div class="thumb">👟</div>
+        <h3>PUMA Basics รองเท้าแตะ Popcat 20 สีชมพู</h3>
+        <div class="price">฿1,000</div>
+        <a class="shop-btn" href="https://s.shopee.co.th/111MIoRF7I" target="_blank" rel="noopener">ช้อปเลย →</a>
+      </div>
+      <div class="card" style="--g1:#FFE9C8;--g2:#FFD9E1;">
+        <div class="washi"></div>
+        <div class="thumb">👚</div>
+        <h3>LEYA TOP — Pink / White / Green / Yellow</h3>
+        <div class="price">฿1,490</div>
+        <a class="shop-btn" href="https://s.shopee.co.th/50XV49v2EG" target="_blank" rel="noopener">ช้อปเลย →</a>
+      </div>
+      <div class="card" style="--g1:#E3D9FF;--g2:#FFF1E0;">
+        <div class="washi"></div>
+        <span class="tag">พรีออเดอร์</span>
+        <div class="thumb">👔</div>
+        <h3>STYLIST T-Shirts-O (Soft White / Soft Dark Grey)</h3>
+      <div class="price">ดูราคาหน้าสินค้า</div>
+        <a class="shop-btn" href="https://s.shopee.co.th/W55hsvBau" target="_blank" rel="noopener">ช้อปเลย →</a>
+      </div>
+      <div class="card" style="--g1:#D9FFE4;--g2:#F0FFE9;">
+        <div class="washi"></div>
+        <span class="tag">สายแมว</span>
+        <div class="thumb">🐾</div>
+        <h3>แผ่นลับเล็บแมว พรมแมว ที่ฝนเล็บ ลายวงกลม</h3>
+        <div class="price">ดูราคาหน้าสินค้า</div>
+        <a class="shop-btn" href="https://s.shopee.co.th/1LeCAbyBNO" target="_blank" rel="noopener">ช้อปเลย →</a>
+      </div>
+      <div class="card" style="--g1:#FFF0D9;--g2:#FFE0E0;">
+        <div class="washi"></div>
+        <div class="thumb">🚽</div>
+        <h3>MOYA สุขภัณฑ์ชักโครก 1 ชิ้น 3/6 ลิตร สีขาว</h3>
+        <div class="price">ดูราคาหน้าสินค้า</div>
+        <a class="shop-btn" href="https://s.shopee.co.th/2Vq9YkZfRE" target="_blank" rel="noopener">ช้อปเลย →</a>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="section-head">
+      <div class="kicker">Latest reviews</div>
+      <h2>คลิปรีวิวล่าสุด</h2>
+      <p>ดูคลิปเต็มก่อนตัดสินใจได้ที่ TikTok</p>
+    </div>
+    <div class="video-strip">
+      <a class="vcard" href="https://www.tiktok.com/@meowmeovvw" target="_blank" rel="noopener"><span>เสื้อสลิมฟิต — รีวิวจริง</span></a>
+      <a class="vcard" href="https://www.tiktok.com/@meowmeovvw" target="_blank" rel="noopener"><span>รองเท้าแตะ PUMA Popcat</span></a>
+      <a class="vcard" href="https://www.tiktok.com/@meowmeovvw" target="_blank" rel="noopener"><span>LEYA TOP ลองสวมทุกสี</span></a>
+      <a class="vcard" href="https://www.tiktok.com/@meowmeovvw" target="_blank" rel="noopener"><span>ของใช้น้องแมว มีรีวิว</span></a>
+      <a class="vcard" href="https://www.tiktok.com/@meowmeovvw" target="_blank" rel="noopener"><span>ชักโครก MOYA คุ้มไหม</span></a>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h4>MeowMeow7 🐾</h4>
+        <p>ของดีบอกต่อ + ละครสั้น — รีวิวของใช้จริง คัดของคุ้มมาให้ทุกสัปดาห์</p>
+      </div>
+      <div class="foot-links">
+        <h4>ตามเรา</h4>
+        <a href="https://www.tiktok.com/@meowmeovvw" target="_blank" rel="noopener">TikTok · @meowmeovvw</a>
+        <a href="https://www.facebook.com/meowmeow677" target="_blank" rel="noopener">Facebook · MeowMeow7</a>
+      </div>
+      <div class="foot-links">
+        <h4>ช้อป</h4>
+        <a href="#products">ของแนะนำประจำสัปดาห์</a>
+        <a href="https://shopee.co.th/" target="_blank" rel="noopener">Shopee</a>
+      </div>
+    </div>
+    <div class="foot-bottom">© 2026 MeowMeow7 · ลิงก์สินค้าเป็นลิงก์พันธมิตร (affiliate)</div>
+  </footer>
+  </body>
+  </html>
+  
