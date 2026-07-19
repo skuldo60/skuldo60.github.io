@@ -1,5 +1,16 @@
 [
   {
+    "id": "p440",
+    "name": "สเปรย์ ไล่จิ้งจก ตุ๊กแก 300 มล. หัวฉีดรุ่นพิเศษ สูตรธรรมชาติ GREEN HOUSE LIZARD REPELLENT SPRAY",
+    "price": "฿125",
+    "badge": "",
+    "emoji": "🛍️",
+    "g1": "#FFD9E1",
+    "g2": "#FFF1D6",
+    "shop_link": "https://s.shopee.co.th/80BA4dvCmA",
+    "thumb_url": "images/p440.png"
+  },
+  {
     "id": "p436",
     "name": "เครื่องกรูมมิ่งสัตว์เลี้ยงมืออาชีพ สุนัข สามความเร็ว ปัตตาเลี่ยนสร้างขนสีดํา ที่กันขนอุ้งเท้าแมว แชมพูสุนัข ลูกกลิ้งขจัด",
     "price": "฿704.00",
@@ -75,17 +86,6 @@
     "g2": "#FFF1D6",
     "shop_link": "https://s.shopee.co.th/4AyO4dX3sl",
     "thumb_url": "images/p431.png"
-  },
-  {
-    "id": "p440",
-    "name": "สเปรย์ ไล่จิ้งจก ตุ๊กแก 300 มล. หัวฉีดรุ่นพิเศษ สูตรธรรมชาติ GREEN HOUSE LIZARD REPELLENT SPRAY ราคา 125 บาท",
-    "price": "ดูราคาหน้าสินค้า",
-    "badge": "",
-    "emoji": "🛍️",
-    "g1": "#FFD9E1",
-    "g2": "#FFF1D6",
-    "shop_link": "https://s.shopee.co.th/80BA4dvCmA",
-    "thumb_url": "images/p440.png"
   },
   {
     "id": "p444",
