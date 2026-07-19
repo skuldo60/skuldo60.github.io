@@ -122,6 +122,7 @@
     display:flex; align-items:center; justify-content:center; font-size:34px;
     background:linear-gradient(135deg,var(--g1,#FFD9E1),var(--g2,#FFF1D6));
       }
+  .card .thumb img{width:100%; height:100%; object-fit:cover;}
   .card h3{font-size:15.5px; font-weight:500; line-height:1.4; min-height:44px; font-family:'Sarabun',sans-serif;}
   .card .price{
     font-family:'Mitr',sans-serif; font-weight:600; color:var(--coral-deep); margin:8px 0 12px; font-size:16px;
@@ -136,6 +137,7 @@
         position:absolute; top:10px; right:10px; background:var(--butter); color:#5A4300;
     font-size:11px; font-weight:600; padding:3px 9px; border-radius:999px;
   }
+  .views{font-size:11.5px; color:var(--plum-soft); margin-top:2px;}
   .video-strip{
         display:flex; gap:18px; overflow-x:auto; padding-bottom:12px; scroll-snap-type:x mandatory;
 }
@@ -224,69 +226,20 @@
     <div class="section-head">
       <div class="kicker">Shop the finds</div>
     <h2>ของแนะนำประจำสัปดาห์นี้</h2>
-      <p>คัดจากคลิปที่คนถามซ้ำเข้ามาบ่อยที่สุด — กดปุ่มด้านล่างเพื่อไปหน้าสินค้าบน Shopee</p>
+      <p>คัดจากคลิปที่คนถามซ้ำเข้ามาบ่อยที่สุด — เรียงตามยอดนิยม กดปุ่มด้านล่างเพื่อไปหน้าสินค้าบน Shopee</p>
     </div>
-    <div class="grid">
-      <div class="card" style="--g1:#FFD9E1;--g2:#FFE9C8;">
-        <div class="washi"></div>
-        <span class="tag">ขายดี</span>
-        <div class="thumb">👕</div>
-        <h3>เสื้อแขนสั้น ทรงสลิมฟิต สีสดใส มีให้เลือกหลายสี</h3>
-        <div class="price">ดูราคาหน้าสินค้า</div>
-        <a class="shop-btn" href="https://s.shopee.co.th/4AyO4dX3sl" target="_blank" rel="noopener">ช้อปเลย →</a>
-      </div>
-      <div class="card" style="--g1:#D9E8FF;--g2:#F0F5FF;">
-        <div class="washi"></div>
-        <span class="tag">มาใหม่</span>
-        <div class="thumb">👟</div>
-        <h3>PUMA Basics รองเท้าแตะ Popcat 20 สีชมพู</h3>
-        <div class="price">฿1,000</div>
-        <a class="shop-btn" href="https://s.shopee.co.th/111MIoRF7I" target="_blank" rel="noopener">ช้อปเลย →</a>
-      </div>
-      <div class="card" style="--g1:#FFE9C8;--g2:#FFD9E1;">
-        <div class="washi"></div>
-        <div class="thumb">👚</div>
-        <h3>LEYA TOP — Pink / White / Green / Yellow</h3>
-        <div class="price">฿1,490</div>
-        <a class="shop-btn" href="https://s.shopee.co.th/50XV49v2EG" target="_blank" rel="noopener">ช้อปเลย →</a>
-      </div>
-      <div class="card" style="--g1:#E3D9FF;--g2:#FFF1E0;">
-        <div class="washi"></div>
-        <span class="tag">พรีออเดอร์</span>
-        <div class="thumb">👔</div>
-        <h3>STYLIST T-Shirts-O (Soft White / Soft Dark Grey)</h3>
-      <div class="price">ดูราคาหน้าสินค้า</div>
-        <a class="shop-btn" href="https://s.shopee.co.th/W55hsvBau" target="_blank" rel="noopener">ช้อปเลย →</a>
-      </div>
-      <div class="card" style="--g1:#D9FFE4;--g2:#F0FFE9;">
-        <div class="washi"></div>
-        <span class="tag">สายแมว</span>
-        <div class="thumb">🐾</div>
-        <h3>แผ่นลับเล็บแมว พรมแมว ที่ฝนเล็บ ลายวงกลม</h3>
-        <div class="price">ดูราคาหน้าสินค้า</div>
-        <a class="shop-btn" href="https://s.shopee.co.th/1LeCAbyBNO" target="_blank" rel="noopener">ช้อปเลย →</a>
-      </div>
-      <div class="card" style="--g1:#FFF0D9;--g2:#FFE0E0;">
-        <div class="washi"></div>
-        <div class="thumb">🚽</div>
-        <h3>MOYA สุขภัณฑ์ชักโครก 1 ชิ้น 3/6 ลิตร สีขาว</h3>
-        <div class="price">ดูราคาหน้าสินค้า</div>
-        <a class="shop-btn" href="https://s.shopee.co.th/2Vq9YkZfRE" target="_blank" rel="noopener">ช้อปเลย →</a>
-      </div>
+    <div class="grid" id="productGrid">
+      <p class="views">กำลังโหลดสินค้า...</p>
     </div>
   </section>
   <section>
     <div class="section-head">
       <div class="kicker">Latest reviews</div>
       <h2>คลิปรีวิวล่าสุด</h2>
-      <p>ดูคลิปเต็มก่อนตัดสินใจได้ที่ TikTok</p>
+      <p>ดูคลิปเต็มก่อนตัดสินใจได้ที่ TikTok — เรียงตามคลิปที่คนดูเยอะสุด</p>
     </div>
-    <div class="video-strip">
-      <a class="vcard" href="https://www.tiktok.com/@meowmeovvw" target="_blank" rel="noopener"><span>เสื้อสลิมฟิต — รีวิวจริง</span></a>
-      <a class="vcard" href="https://www.tiktok.com/@meowmeovvw" target="_blank" rel="noopener"><span>รองเท้าแตะ PUMA Popcat</span></a>
-      <a class="vcard" href="https://www.tiktok.com/@meowmeovvw" target="_blank" rel="noopener"><span>LEYA TOP ลองสวมทุกสี</span></a>
-      <a class="vcard" href="https://www.tiktok.com/@meowmeovvw" target="_blank" rel="noopener"><span>ของใช้น้องแมว มีรีวิว</span></a>
-      <a class="vcard" href="https://www.tiktok.com/@meowmeovvw" target="_blank" rel="noopener"><span>ชักโครก MOYA คุ้มไหม</span></a>
+    <div class="video-strip" id="videoStrip">
+      <p class="views">กำลังโหลดคลิป...</p>
     </div>
   </section>
   <footer>
@@ -308,6 +261,113 @@
     </div>
     <div class="foot-bottom">© 2026 MeowMeow7 · ลิงก์สินค้าเป็นลิงก์พันธมิตร (affiliate)</div>
   </footer>
+
+<script>
+// ── ตั้งค่า ────────────────────────────────────────────────────────────
+// ใส่ URL ของ Cloudflare Worker หลัง deploy (ดู cloudflare-worker/README.md)
+// ปล่อยว่างไว้ได้ — เว็บจะยังทำงานปกติ แค่ไม่มีการนับ/เรียงตามยอดนิยม
+const COUNTER_API = ""; // ตัวอย่าง: "https://meowmeow7-shop-counter.yoursubdomain.workers.dev"
+
+// ── ดึงยอด view/click ────────────────────────────────────────────────
+async function fetchCounts(){
+  if(!COUNTER_API) return {};
+  try{
+    const r = await fetch(COUNTER_API + "/counts");
+    if(!r.ok) return {};
+    return await r.json();
+  }catch(e){
+    console.warn("นับยอดไม่ได้ (worker ยังไม่ได้ตั้งค่า หรือออฟไลน์):", e);
+    return {};
+  }
+}
+
+function trackHit(id, kind){
+  if(!COUNTER_API) return;
+  const url = COUNTER_API + "/hit";
+  const body = JSON.stringify({id, kind});
+  // sendBeacon ส่งได้แม้หน้าเว็บกำลังจะปิด (เช่นตอนกดลิงก์ออกไป Shopee)
+  if(navigator.sendBeacon){
+    navigator.sendBeacon(url, new Blob([body], {type:"application/json"}));
+  } else {
+    fetch(url, {method:"POST", headers:{"Content-Type":"application/json"}, body, keepalive:true});
+  }
+}
+
+function trackViewOnce(id){
+  const key = "seen_" + id;
+  if(sessionStorage.getItem(key)) return;
+  sessionStorage.setItem(key, "1");
+  trackHit(id, "view");
+}
+
+// ── Render สินค้า ────────────────────────────────────────────────────
+function renderProducts(products, counts){
+  const withViews = products.map(p => ({
+    ...p,
+    views: (counts[p.id] && counts[p.id].views) || 0,
+  }));
+  withViews.sort((a,b) => b.views - a.views);
+
+  const grid = document.getElementById("productGrid");
+  grid.innerHTML = "";
+  withViews.forEach(p => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.style.setProperty("--g1", p.g1 || "#FFD9E1");
+    card.style.setProperty("--g2", p.g2 || "#FFF1D6");
+    const tagHtml = p.badge ? `<span class="tag">${p.badge}</span>` : "";
+    const thumbHtml = p.thumb_url
+      ? `<img src="${p.thumb_url}" alt="">`
+      : (p.emoji || "🛍️");
+    const viewsHtml = COUNTER_API ? `<div class="views">👀 ${p.views.toLocaleString()} ครั้ง</div>` : "";
+    card.innerHTML = `
+      <div class="washi"></div>
+      ${tagHtml}
+      <div class="thumb">${thumbHtml}</div>
+      <h3>${p.name}</h3>
+      <div class="price">${p.price || "ดูราคาหน้าสินค้า"}</div>
+      ${viewsHtml}
+      <a class="shop-btn" href="${p.shop_link}" target="_blank" rel="noopener" data-id="${p.id}">ช้อปเลย →</a>
+    `;
+    card.querySelector(".shop-btn").addEventListener("click", () => trackHit(p.id, "click"));
+    grid.appendChild(card);
+    trackViewOnce(p.id);
+  });
+}
+
+// ── Render วิดีโอ ────────────────────────────────────────────────────
+function renderVideos(videos, counts){
+  const withViews = videos.map(v => ({
+    ...v,
+    views: (counts[v.id] && counts[v.id].views) || 0,
+  }));
+  withViews.sort((a,b) => b.views - a.views);
+
+  const strip = document.getElementById("videoStrip");
+  strip.innerHTML = "";
+  withViews.forEach(v => {
+    const a = document.createElement("a");
+    a.className = "vcard";
+    a.href = v.link;
+    a.target = "_blank";
+    a.rel = "noopener";
+    a.innerHTML = `<span>${v.title}</span>`;
+    a.addEventListener("click", () => trackHit(v.id, "click"));
+    strip.appendChild(a);
+    trackViewOnce(v.id);
+  });
+}
+
+// ── โหลดทุกอย่าง ─────────────────────────────────────────────────────
+(async function init(){
+  const [products, videos, counts] = await Promise.all([
+    fetch("products.json").then(r => r.json()).catch(() => []),
+    fetch("videos.json").then(r => r.json()).catch(() => []),
+    fetchCounts(),
+  ]);
+  renderProducts(products, counts);
+  renderVideos(videos, counts);
+})();
+</script>
   </body>
   </html>
-  

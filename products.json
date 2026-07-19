@@ -1,0 +1,62 @@
+[
+  {
+    "id": "p1",
+    "name": "เสื้อแขนสั้น ทรงสลิมฟิต สีสดใส มีให้เลือกหลายสี",
+    "price": "ดูราคาหน้าสินค้า",
+    "badge": "ขายดี",
+    "emoji": "👕",
+    "g1": "#FFD9E1",
+    "g2": "#FFE9C8",
+    "shop_link": "https://s.shopee.co.th/4AyO4dX3sl"
+  },
+  {
+    "id": "p2",
+    "name": "PUMA Basics รองเท้าแตะ Popcat 20 สีชมพู",
+    "price": "฿1,000",
+    "badge": "มาใหม่",
+    "emoji": "👟",
+    "g1": "#D9E8FF",
+    "g2": "#F0F5FF",
+    "shop_link": "https://s.shopee.co.th/111MIoRF7I"
+  },
+  {
+    "id": "p3",
+    "name": "LEYA TOP — Pink / White / Green / Yellow",
+    "price": "฿1,490",
+    "badge": "",
+    "emoji": "👚",
+    "g1": "#FFE9C8",
+    "g2": "#FFD9E1",
+    "shop_link": "https://s.shopee.co.th/50XV49v2EG"
+  },
+  {
+    "id": "p4",
+    "name": "STYLIST T-Shirts-O (Soft White / Soft Dark Grey)",
+    "price": "ดูราคาหน้าสินค้า",
+    "badge": "พรีออเดอร์",
+    "emoji": "👔",
+    "g1": "#E3D9FF",
+    "g2": "#FFF1E0",
+    "shop_link": "https://s.shopee.co.th/W55hsvBau"
+  },
+  {
+    "id": "p5",
+    "name": "แผ่นลับเล็บแมว พรมแมว ที่ฝนเล็บ ลายวงกลม",
+    "price": "ดูราคาหน้าสินค้า",
+    "badge": "สายแมว",
+    "emoji": "🐾",
+    "g1": "#D9FFE4",
+    "g2": "#F0FFE9",
+    "shop_link": "https://s.shopee.co.th/1LeCAbyBNO"
+  },
+  {
+    "id": "p6",
+    "name": "MOYA สุขภัณฑ์ชักโครก 1 ชิ้น 3/6 ลิตร สีขาว",
+    "price": "ดูราคาหน้าสินค้า",
+    "badge": "",
+    "emoji": "🚽",
+    "g1": "#FFF0D9",
+    "g2": "#FFE0E0",
+    "shop_link": "https://s.shopee.co.th/2Vq9YkZfRE"
+  }
+]
